@@ -10,6 +10,8 @@ const ProductDetail = () => {
    // const [cartCount, setCartCount] = useState(0);
   const { id } = useParams();
 
+
+
   const handleCart = () => {
     dispatch(addItem(product));
     console.log(product);
