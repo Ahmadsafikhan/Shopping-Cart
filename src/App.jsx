@@ -3,7 +3,12 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import ProductDetail from "./components/ProductDetail";
 import Cart from "./components/Cart";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./App.css"
 // import { useEffect, useState } from "react";
+library.add(faShoppingCart);
 
 function App() {
 
@@ -11,8 +16,8 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route index path="/Shopping-Cart/" element={<Home />} />
-        <Route path="/Shopping-Cart/:id" element={<ProductDetail />} />
+        <Route path="/Shopping-Cart/" element={<Home />} />
+        <Route path="/Shopping-Cart/details/:id" element={<ProductDetail />} />
         <Route path="/Shopping-Cart/cart" element={<Cart />} />
       </Routes>
     </>

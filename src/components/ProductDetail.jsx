@@ -37,15 +37,15 @@ const ProductDetail = () => {
   return (
     <Container className="mt-8 p-4">
       <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="pr-0 md:pr-8 mb-4 md:mb-0">
-          <img src={product.image} alt={product.title} className="w-full md:w-[300px] max-w-xs mx-auto md:mx-0" />
+        <div className="pr-0 md:pr-8 mb-[1.5rem] md:mb-0">
+          <img src={product.image} alt={product.title} className="w-full md:w-[300px] max-w-[16rem] mx-auto md:mx-0" />
         </div>
         <div className="w-full md:w-1/2">
           <h1 className="text-2xl font-bold mb-4">{product.title}</h1>
           <p className="text-gray-600 mb-2">${product.price}</p>
           <div className="mb-4">
             <button
-              className="bg-yellow-400 hover:bg-yellow-500 text-white py-2 px-4 rounded mr-2"
+              className="bg-yellow-500 hover:bg-yellow-700 text-white py-2 px-4 rounded mr-2"
               onClick={handleCart}
             >
               Add to Cart

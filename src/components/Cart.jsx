@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useSelector } from 'react-redux';
-import CartItem from './CartItem'; // Import your CartItem component
+import CartItem from './CartItem'; 
 
 const Cart = () => {
   const cartItems = useSelector(state => state.cart.items);

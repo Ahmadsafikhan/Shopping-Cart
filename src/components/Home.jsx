@@ -14,6 +14,7 @@ const Home = () => {
   }, []);
 
   return (
+  
     <Container className=" p-4">
       <h1 className="text-4xl font-semibold mb-8 text-center">Welcome to Fake Store</h1>
       <div className="flex flex-wrap gap-4 justify-center">
@@ -30,7 +31,7 @@ const Home = () => {
             <p className="text-gray-600 mb-2">${product.price}</p>
             <Link
               className=" text-center bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
-              to={`/details/${product.id}`}
+              to={`/Shopping-Cart/details/${product.id}`}
             >
               View Details
             </Link>
@@ -39,6 +40,7 @@ const Home = () => {
         ))}
       </div>
     </Container>
+ 
   );
 };
 
