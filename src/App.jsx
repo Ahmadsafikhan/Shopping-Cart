@@ -4,11 +4,11 @@ import NavBar from "./components/NavBar";
 import ProductDetail from "./components/ProductDetail";
 import Cart from "./components/Cart";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "./App.css"
-// import { useEffect, useState } from "react";
 library.add(faShoppingCart);
+library.add(faArrowRight)
+library.add(faArrowLeft)
 
 function App() {
 

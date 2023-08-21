@@ -36,13 +36,14 @@ const ProductDetail = () => {
 
   return (
     <Container className="p-4">
-      <div className="flex flex-col md:flex-row justify-center items-center pt-[5rem]">
-        <div className="pr-0 md:pr-8 mb-[1.5rem] md:mb-0">
+      <div className="flex flex-col md:flex-row justify-center items-center pt-[5rem] max-w-5xl mx-auto">
+        <div className="pr-0 md:pr-[6rem] mb-[1.5rem] md:mb-0">
           <img src={product.image} alt={product.title} className="w-full md:w-[300px] max-w-[16rem] mx-auto md:mx-0" />
         </div>
         <div className="w-full md:w-1/2">
           <h1 className="text-2xl font-bold mb-4">{product.title}</h1>
           <p className="text-gray-600 mb-2">${product.price}</p>
+          <p className="text-gray-600 mb-2">Ratings: {product.rating.rate}</p>
           <div className="mb-4">
             <button
               className="bg-yellow-500 hover:bg-yellow-700 text-white py-2 px-4 rounded mr-2"
