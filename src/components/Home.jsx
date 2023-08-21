@@ -16,6 +16,7 @@ const Home = () => {
   return (
   
     <Container className=" p-4">
+      <div className="pt-[5rem]">
       <h1 className="text-4xl font-semibold mb-8 text-center">Welcome to Fake Store</h1>
       <div className="flex flex-wrap gap-4 justify-center">
         {data.map((product) => (
@@ -38,6 +39,7 @@ const Home = () => {
               </div>
           </ProductCard>
         ))}
+      </div>
       </div>
     </Container>
  

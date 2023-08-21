@@ -9,7 +9,7 @@ const NavBar = () => {
   // const dispatch = useDispatch()
 
   return (
-    <div className="bg-white-900 p-4 flex justify-between items-center shadow-lg">
+    <div className="bg-white-900 p-4 flex justify-between items-center shadow-lg fixed bg-white w-[100%] z-40">
       <Link className="text-xl font-semibold" to={"/Shopping-Cart"}>
         My Online Store
       </Link>

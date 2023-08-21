@@ -35,8 +35,8 @@ const ProductDetail = () => {
   }
 
   return (
-    <Container className="mt-8 p-4">
-      <div className="flex flex-col md:flex-row justify-center items-center">
+    <Container className="p-4">
+      <div className="flex flex-col md:flex-row justify-center items-center pt-[5rem]">
         <div className="pr-0 md:pr-8 mb-[1.5rem] md:mb-0">
           <img src={product.image} alt={product.title} className="w-full md:w-[300px] max-w-[16rem] mx-auto md:mx-0" />
         </div>
